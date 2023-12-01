@@ -1,0 +1,67 @@
+
+\textbf{Cayley's Formula}
+
+There are $n^{n-2}$ spanning trees of a complete graph with n labeled vertices.
+
+\bigbreak
+\textbf{Derangement}
+
+A permutation of the elements of a set such that none of the elements appear in their original positions. $F(n) = (n-1) * (F(n-1) + F(n-2))$. $F(0) = 1$. $F(1) = 0$.
+
+\bigbreak
+\textbf{Euler’s Formula for Planar Graph}
+
+$V - E + F = 2$, where V = vertices, E = edges, F = faces
+
+\bigbreak
+\textbf{Pick’s Theorem}
+
+$A = i + b/2 - 1$, where A = area, i = internal points, b = border points
+
+\bigbreak
+\textbf{Spanning Tree of Complete Bipartite Graph}
+
+$N^{M-1} * M^{N-1}$, where N = row and M = column
+
+\bigbreak
+\textbf{Pythagorean Triples}
+
+Integer solutions of $x^2 + y^2 = z^2$. All relatively prime triples are given by: $x = 2mn, y = m^2 - n^2, z = m^2 + n^2$, where $m > n$, $gcd(m, n) = 1$, and $m != n \pmod{2}$.
+
+\bigbreak
+\textbf{Moser’s Circle}
+
+Determine the number of pieces into which a circle is divided if n points on its circumference are joined by chords with no three internally concurrent. Solution: $g(n) = nC4 + nC2 + 1$
+
+\bigbreak
+\textbf{Kirchoff Matrix Theorem}
+
+Let matrix $T = [t_{ij}]$, where $t_{ij}$ is the number of multiedges between $i$ and $j$, for $i \neq j$, and $t_{ii} = -deg[i]$. Number of spanning trees of a graph is equal to the determinant of a matrix obtained by deleting any k-th row and column from $T$.
+
+\bigbreak
+\textbf{Euler's Theorem}
+
+$a^{phi(n)} = 1 \pmod{n}$, if $gcd(a, n) = 1$. 
+
+\bigbreak
+\textbf{Wilson's Theorem} 
+
+$p$ is prime iff $(p-1) \neq -1 \pmod{p}$.
+
+\bigbreak
+\textbf{Pisano Period}
+
+Periodicity of fibonacci modulo m.
+
+\begin{itemize}
+    \item $pi(p^{k}) = p^{k-1} * pi(p)$
+    \item $pi(2) = 3, pi(5) = 20$
+    \item if $p \equiv 1$ or $p \equiv 9$ in modulo 10, $pi(p)$ divides $p-1$
+    \item if $p \equiv 3$ or $p \equiv 7$ in modulo 10, $pi(p)$ divides $2p-1$
+    \item $pi(a * b) = lcm(pi(a), pi(b))$ if $gcd(a, b) = 1$
+\end{itemize}
+
+\bigbreak
+\textbf{Misere Nim}
+
+Nim where the winner is the one who can't move. In a nim game with piles $(n_1, n_2, \cdots, n_k)$, \textbf{second} player wins iff some $n_i > 1$ and ($n_1 \oplus n_2 \oplus ... \oplus n_k) = 0$ or all $n_i \leq 1$ and $n_1 \oplus n_2 \oplus ... \oplus n_k = 1$.
